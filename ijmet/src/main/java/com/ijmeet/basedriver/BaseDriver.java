@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import com.ijmeet.utility.GeneralUtil;
 
 public class BaseDriver {
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	protected void startChrome() {
 		// TODO Auto-generated method stub
@@ -113,7 +113,7 @@ public class BaseDriver {
 		}
 	}
 
-	public void navigate(String url) {
+	public static void navigate(String url) {
 		driver.get(url);
 	}
 
